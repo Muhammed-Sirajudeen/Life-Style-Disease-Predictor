@@ -1,0 +1,71 @@
+<div class="container" id="maincontainer">
+    <div class="row pt-4">
+        <div class="col">
+
+        </div>
+        <div class="col pt-3" id="heartcol">
+            <form class="text-center " action="/diabetesSubmit" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Full name</label><br/>
+
+           <input type="text" name="fullname" id="name">
+            <br/>
+            <br/>
+
+            <label for="mail">Email</label><br/>
+            <input type="email" name="useremail" id="mail">
+            <br>
+            <br/>
+            <label for="age">Age</label><br/>
+            <input type="number" name="age" id="age">
+            <br/><br/>
+            
+            <p>have your parents or family members had diabetes</p>
+            <label for="genetics">yes</label>
+            <input type="radio" name="genetics" id="genetics">
+            <br/>
+            <br/>
+            <p>Do you excercise regularly</p>
+            <label for="excercise">Yes</label>
+            
+            <input type="radio" name="excercise" id="excercise">
+            <br/>
+
+            <p> Are you black hispanic or American Indian</p>
+            <label for="ethnicity">Yes</label>
+            <input type="radio" name="ethnicity" id="ethnicity">
+            <br/>
+
+            <p> Do you experience .....(symptoms here)</p>
+            <label for="symptoms">yes</label>
+            <input type="radio" name="symptoms" id="symptoms">
+            <br/><br/>
+
+            <p>Are you obese?</p>
+            <label for="obese">yes</label>
+            <input type="radio" name="obese" id="obese">
+            <br/><br/>
+                        <input type="submit" value="submit" name="submit">
+            <br/><br/>
+
+            </form>
+        </div>
+        <div class="col">
+
+        </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+{{#if result}}
+<form action="/diabetesresult" method="post" enctype="application/x-www-form-urlencoded">
+<p>your secret key is {{secretkey}}</p>
+<label for="key">Enter your secret key</label>
+<input type="number" name="key" id="key">
+<input type="submit" value="see your result" id="result" name="submit">
+</form>
+{{/if}}
+</div></div></div></div>

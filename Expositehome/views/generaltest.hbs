@@ -1,0 +1,106 @@
+<h5 class="text-center">General Test</h5>
+<div class="container" id="maincontainer">
+    <div class="row pt-4">
+        <div class="col">
+
+        </div>
+        <div class="col pt-3" id="heartcol">
+            <form class="text-center " action="/strokeSubmit" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Full name</label><br/>
+
+           <input type="text" name="fullname" id="name">
+            <br/>
+            <br/>
+
+            <label for="mail">Email</label><br/>
+            <input type="email" name="useremail" id="mail">
+            <br>
+            <br/>
+            <label for="age">Age</label><br/>
+            <input type="number" name="age" id="age">
+            <br/><br/>
+            
+            <p>Are you a chain smoker?</p>
+            <label for="smoking">yes</label>
+            <input type="radio" name="smoking" id="smoking">
+            <br/>
+            <br/>
+            <p>Are you a heavy consumer of alcohol?</p>
+            <label for="alcohol">Yes</label>
+            
+            <input type="radio" name="alcohol" id="alcohol">
+            <br/>
+
+            <p> Are you a diabetes patient?</p>
+            <label for="diabetes">Yes</label>
+            <input type="radio" name="diabetes" id="diabetes">
+            <br/>
+
+            <p> Do you have blood pressure?</p>
+            <label for="bloodpressure">yes</label>
+            <input type="radio" name="bloodpressure" id="bloodpressure">
+            <br/><br/>
+
+            <p>Do you have cholestrol?</p>
+            <label for="cholestrol">yes</label>
+            <input type="radio" name="cholestrol" id="cholestrol">
+            <br/><br/>
+
+            <p>Do you have migraine?</p>
+            <label for="migraine">yes</label>
+            <input type="radio" name="migraine" id="migraine">
+            <br/><br/>
+
+                        <p>Are you a drug abuser?</p>
+            <label for="drugabuse">yes</label>
+            <input type="radio" name="drugabuse" id="drugabuse">
+            <br/><br/>
+
+            <p>Do you have take birth control pills?</p>
+            <label for="birthcontrol">yes</label>
+            <input type="radio" name="birthcontrol" id="birthcontrol">
+            <br/><br/>
+
+            <p>Gender?</p>
+            <label for="genderm">male</label>
+            <input type="radio" name="genderm" id="genderm">
+            <label for="genderf">female</label>
+            <input type="radio" name="genderf" id="genderf">
+            <br/><br/>
+
+            <p>Are you obese?</p>
+            <label for="obese">yes</label>
+            <input type="radio" name="obese" id="obese">
+            <br/><br/>
+
+
+            <p>Do you Excercise regularly?</p>
+            <label for="physicalinactivity">yes</label>
+            <input type="radio" name="physicalinactivity" id="physcialinactivity">
+            <br/><br/>
+
+
+            <input type="submit" value="submit" name="submit">
+            <br/><br/>
+
+            </form>
+        </div>
+        <div class="col">
+
+        </div>
+        
+    </div>
+</div>
+
+{{#if result}}
+<div class="text-center">
+<p> your key is {{secretkey}}</p>
+<form  action="/strokeResult" method="post" enctype="application/x-www-form-urlencoded">
+<label for="secretkeyss">enter your secret id</label><br/> 
+<input type="text" name="secretkeyss" id="secretkeys" placeholder="keep it secret .....">
+<br/>
+<input type="submit" value="search" id="submit">
+
+</form>
+</div>
+{{/if}}

@@ -1,0 +1,26 @@
+#mainbody{
+  background-color: whitesmoke;
+}
+#card1{
+  background-color: blueviolet;
+  border-radius: 40px;
+  color: white;
+}
+#heartcol{
+  background-color: crimson;
+  color:white;
+  border-radius: 20px;
+}
+#image1{
+  border-radius: 40px;
+
+}
+#image2{
+  border-radius:40px;
+}
+#image3{
+  border-radius: 40px;
+}
+#bottom-text{
+  margin-top: 17.5%;
+}

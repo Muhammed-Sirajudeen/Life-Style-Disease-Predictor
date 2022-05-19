@@ -1,0 +1,11 @@
+Age,Diabetes,Drug Abuse,Alcohol/caffeine,Blood Pressure,Cholestrol,Smoking,Stress,Family His,Poor Diet,Obesity,Physical inactivity,Result
+20,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,3
+30,N,N,Y,N,Y,Y,N,N,Y,N,Y,2
+26,N,N,N,N,N,N,N,N,N,N,N,0
+19,N,N,N,N,N,N,N,N,N,N,N,0
+50,Y,N,N,Y,N,Y,N,Y,N,Y,Y,2
+60,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,Y,2
+40,N,Y,N,N,N,N,N,N,N,N,N,1
+28,Y,N,Y,N,Y,Y,Y,Y,Y,Y,N,3
+70,Y,N,N,Y,Y,N,Y,Y,N,N,Y,3
+30,N,Y,Y,N,N,Y,N,Y,N,N,N,2

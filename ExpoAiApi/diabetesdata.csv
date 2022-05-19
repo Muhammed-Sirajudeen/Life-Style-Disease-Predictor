@@ -1,0 +1,16 @@
+Age,FamilyHis,Ethni,Symptoms,Excercise,result
+12,No,Y,No,Yes,0
+10,No,Y,No,Yes,0
+22,yes,No,No,No,0
+45,yes,Y,yes,No,1
+30,No,No,No,No,0
+26,No,Y,No,Yes,0
+28,yes,Y,yes,Yes,1
+21,No,No,No,No,0
+56,yes,Y,No,Yes,1
+34,No,No,No,Yes,0
+34,yes,Y,No,Yes,0
+34,yes,Y,yes,No,1
+34,yes,Y,No,No,2
+45,No,No,yes,No,2
+14,No,Y,No,Yes,0

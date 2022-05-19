@@ -1,0 +1,101 @@
+<div class="container" id="maincontainer">
+    <div class="row pt-4">
+        <div class="col">
+
+        </div>
+        <div class="col pt-3" id="heartcol">
+            <form class="text-center " action="/heartSubmit" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Full name</label><br/>
+
+           <input type="text" name="fullname" id="name">
+            <br/>
+            <br/>
+
+            <label for="mail">Email</label><br/>
+            <input type="email" name="useremail" id="mail">
+            <br>
+            <br/>
+            <label for="age">Age</label><br/>
+            <input type="number" name="age" id="age">
+            <br/><br/>
+            
+            <p>Do you have diabetes</p>
+            <label for="diabetes">yes</label>
+            <input type="radio" name="diabetes" id="diabetes">
+            <br/>
+            <br/>
+            <p>Are you a drug abuser?</p>
+            <label for="drugabuse">Yes</label>
+            
+            <input type="radio" name="drugabuse" id="drugabuse">
+            <br/>
+
+            <p> Are you a big consumer of Alcohol/Caffeine?</p>
+            <label for="alcoholcaffeine">Yes</label>
+            <input type="radio" name="alcoholcaffeine" id="alchoholcaffeine">
+            <br/>
+
+            <p> Do you have high blood pressure?</p>
+            <label for="bloodpressure">yes</label>
+            <input type="radio" name="bloodpressure" id="bloodpressure">
+            <br/><br/>
+
+            <p>Do you have cholestrol?</p>
+            <label for="cholestrol">yes</label>
+            <input type="radio" name="cholestrol" id="cholestrol">
+            <br/><br/>
+
+                <p>Are you habitual smoker?</p>
+            <label for="smoking">yes</label>
+            <input type="radio" name="smoking" id="smoking">
+            <br/><br/>
+            
+
+            <p>Are you frequently under stress?</p>
+            <label for="stress">yes</label>
+            <input type="radio" name="stress" id="stress">
+            <br/><br/>
+
+                        <p>Does your family has a history of heart attack?</p>
+            <label for="familyhis">yes</label>
+            <input type="radio" name="familyhis" id="familyhis">
+            <br/><br/>
+
+                        <p>Are you a follower of poor diet?</p>
+            <label for="poordiet">yes</label>
+            <input type="radio" name="poordiet" id="poordiet">
+            <br/><br/>
+
+                        <p>Are you obese?</p>
+            <label for="obese">yes</label>
+            <input type="radio" name="obese" id="obese">
+            <br/><br/>
+
+
+                        <p>Do you excercise regularly?</p>
+            <label for="physicalinactivity">yes</label>
+            <input type="radio" name="physicalinactivity" id="physicalinactivity">
+            <br/><br/>
+                        <input type="submit" value="submit" name="submit">
+            <br/><br/>
+
+            </form>
+        </div>
+        <div class="col">
+
+        </div>
+        
+    </div>
+</div>
+{{#if result}}
+<div class="text-center">
+<p> your key is {{secretkey}}</p>
+<form  action="/heartresult" method="post" enctype="application/x-www-form-urlencoded">
+<label for="secretkey">enter your secret id</label><br/> 
+<input type="text" name="secretkeys" id="secretkeys" placeholder="keep it secret .....">
+<br/>
+<input type="submit" value="search" id="submit">
+
+</form>
+</div>
+{{/if}}

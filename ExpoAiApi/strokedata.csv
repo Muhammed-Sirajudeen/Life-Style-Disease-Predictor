@@ -1,0 +1,15 @@
+Age,Smoking,Heavy Drinking,Diabetes,BloodPressure,Cholestrol,Migraine,DrugAbuse,BirthControlPills,Gender,Obese,Physicalinactivity,Result
+30,Y,Y,Y,Y,Y,Y,Y,N,M,Y,Y,1
+27,N,N,N,N,N,N,N,N,M,N,N,0
+50,Y,Y,N,N,Y,N,Y,N,M,N,Y,1
+35,Y,N,Y,N,N,N,N,N,M,N,N,0
+70,N,N,Y,N,N,Y,N,N,M,Y,Y,1
+18,Y,Y,Y,Y,Y,Y,Y,Y,F,Y,Y,1
+18,Y,Y,Y,Y,Y,Y,Y,Y,M,Y,Y,1
+34,N,Y,N,Y,N,Y,N,Y,F,Y,N,1
+54,N,N,Y,Y,Y,Y,N,N,F,N,Y,1
+26,n,N,N,N,N,N,N,N,M,N,N,0
+35,N,N,N,N,N,N,N,N,F,N,N,0
+19,N,N,N,N,N,N,N,N,M,N,N,0
+38,N,N,N,N,N,N,N,N,F,N,N,0
+60,Y,N,Y,Y,N,N,N,N,M,N,Y,1
